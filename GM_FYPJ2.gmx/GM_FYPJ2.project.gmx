@@ -5,13 +5,26 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <sprites name="sprites">
+    <sprite>sprites\Exit_spirte</sprite>
+    <sprite>sprites\Play_sprite</sprite>
+    <sprite>sprites\Play_sprite_pressed</sprite>
+    <sprite>sprites\player_sprite</sprite>
+    <sprite>sprites\Exit_sprite_pressed</sprite>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\MainMenu_BG</background>
+    <background>background\Setting_BG</background>
+  </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts"/>
-  <objects name="objects"/>
+  <objects name="objects">
+    <object>objects\Play_button</object>
+    <object>objects\Player</object>
+    <object>objects\Exit_button</object>
+  </objects>
   <rooms name="rooms">
     <room>rooms\Main_Menu</room>
+    <room>rooms\Settings_Menu</room>
     <room>rooms\Town</room>
     <room>rooms\Mob_Room</room>
     <room>rooms\Boss_Room</room>
