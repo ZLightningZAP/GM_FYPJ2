@@ -6,24 +6,51 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\Exit_spirte</sprite>
-    <sprite>sprites\Play_sprite</sprite>
-    <sprite>sprites\Play_sprite_pressed</sprite>
-    <sprite>sprites\player_sprite</sprite>
-    <sprite>sprites\Exit_sprite_pressed</sprite>
+    <sprites name="Main Menu">
+      <sprite>sprites\Play_sprite</sprite>
+      <sprite>sprites\Exit_spirte</sprite>
+      <sprite>sprites\Exit_sprite_pressed</sprite>
+      <sprite>sprites\Play_sprite_pressed</sprite>
+    </sprites>
+    <sprites name="Settings">
+      <sprite>sprites\Checkbox</sprite>
+    </sprites>
+    <sprites name="Player">
+      <sprite>sprites\player_sprite</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\MainMenu_BG</background>
-    <background>background\Setting_BG</background>
+    <background>background\Settings_BG</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\Edo_font</font>
   </fonts>
   <objects name="objects">
-    <object>objects\Play_button</object>
-    <object>objects\Player</object>
-    <object>objects\Exit_button</object>
+    <objects name="Main Menu">
+      <object>objects\Exit_button</object>
+      <object>objects\Play_button</object>
+    </objects>
+    <objects name="Player">
+      <object>objects\Player</object>
+    </objects>
+    <objects name="Settings">
+      <objects name="Checkbox">
+        <object>objects\checkbox_CharHP</object>
+        <object>objects\checkbox_MonName</object>
+        <object>objects\checkbox_MonLvl</object>
+      </objects>
+      <objects name="Text">
+        <object>objects\text_CharHP</object>
+        <object>objects\text_MonName</object>
+        <object>objects\text_MonLvl</object>
+        <object>objects\text_Audio</object>
+        <object>objects\text_Brightness</object>
+        <object>objects\text_Sensitivity</object>
+        <object>objects\text_Settings</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Main_Menu</room>
