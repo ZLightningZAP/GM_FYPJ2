@@ -17,6 +17,9 @@
     <background>background\Setting_BG</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\Edo_font</font>
+  </fonts>
   <objects name="objects">
     <object>objects\Play_button</object>
     <object>objects\Player</object>
