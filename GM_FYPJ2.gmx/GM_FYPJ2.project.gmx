@@ -6,47 +6,73 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprites name="Main Menu">
-      <sprite>sprites\Play_sprite</sprite>
-      <sprite>sprites\Exit_spirte</sprite>
-      <sprite>sprites\Exit_sprite_pressed</sprite>
-      <sprite>sprites\Play_sprite_pressed</sprite>
-    </sprites>
-    <sprites name="Settings">
+    <sprite>sprites\player_sprite</sprite>
+    <sprites name="Button Sprites">
+      <sprite>sprites\sprite_exit</sprite>
+      <sprite>sprites\sprite_exit_pressed</sprite>
+      <sprite>sprites\sprite_play</sprite>
+      <sprite>sprites\sprite_play_pressed</sprite>
+      <sprite>sprites\sprite_option</sprite>
+      <sprite>sprites\sprite_option_pressed</sprite>
+      <sprite>sprites\sprite_option_exit</sprite>
+      <sprite>sprites\sprite_option_setting</sprite>
       <sprite>sprites\Checkbox</sprite>
     </sprites>
-    <sprites name="Player">
-      <sprite>sprites\player_sprite</sprite>
+    <sprites name="Enemies">
+      <sprite>sprites\sprite_enemy_test</sprite>
     </sprites>
+    <sprites name="GUI">
+      <sprite>sprites\GUI_healthbar_border</sprite>
+      <sprite>sprites\GUI_healthbar_fill</sprite>
+      <sprite>sprites\GUI_healthbar_bg</sprite>
+    </sprites>
+    <sprite>sprites\floor_portal</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MainMenu_BG</background>
-    <background>background\Settings_BG</background>
+    <background>background\Setting_BG</background>
+    <background>background\Archive_BG</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_enemy_idle.gml</script>
+    <script>scripts\scr_enemy_follow.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\Edo_font</font>
   </fonts>
   <objects name="objects">
-    <objects name="Main Menu">
-      <object>objects\Exit_button</object>
+    <objects name="Buttons">
       <object>objects\Play_button</object>
+      <object>objects\Exit_button</object>
+      <object>objects\Option_Button</object>
+      <object>objects\Option_exit_button</object>
+      <object>objects\Option_setting_button</object>
     </objects>
-    <objects name="Player">
-      <object>objects\Player</object>
+    <objects name="Enemies">
+      <object>objects\obj_enemy_test</object>
+    </objects>
+    <objects name="Controllers">
+      <object>objects\cont_game_main_</object>
+      <object>objects\cont_enemySpawner</object>
+      <object>objects\cont_player_data</object>
+      <object>objects\obj_player</object>
+    </objects>
+    <objects name="Gateway">
+      <object>objects\obj_prt_TOFLOOR</object>
     </objects>
     <objects name="Settings">
       <objects name="Checkbox">
         <object>objects\checkbox_CharHP</object>
-        <object>objects\checkbox_MonName</object>
         <object>objects\checkbox_MonLvl</object>
+        <object>objects\checkbox_MonName</object>
       </objects>
       <objects name="Text">
-        <object>objects\text_CharHP</object>
-        <object>objects\text_MonName</object>
-        <object>objects\text_MonLvl</object>
         <object>objects\text_Audio</object>
         <object>objects\text_Brightness</object>
+        <object>objects\text_CharHP</object>
+        <object>objects\text_MonLvl</object>
+        <object>objects\text_MonName</object>
         <object>objects\text_Sensitivity</object>
         <object>objects\text_Settings</object>
       </objects>
@@ -58,6 +84,7 @@
     <room>rooms\Town</room>
     <room>rooms\Mob_Room</room>
     <room>rooms\Boss_Room</room>
+    <room>rooms\Arhive_Menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

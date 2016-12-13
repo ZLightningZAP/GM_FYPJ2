@@ -8,18 +8,18 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>104</bbox_right>
+  <bbox_right>162</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>71</bbox_bottom>
+  <bbox_bottom>65</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>105</width>
-  <height>72</height>
+  <width>163</width>
+  <height>66</height>
   <frames>
-    <frame index="0">images\Play_sprite_pressed_0.png</frame>
+    <frame index="0">images\GUI_healthbar_border_0.png</frame>
   </frames>
 </sprite>
