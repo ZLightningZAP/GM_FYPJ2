@@ -37,6 +37,11 @@
   <scripts name="scripts">
     <script>scripts\scr_enemy_idle.gml</script>
     <script>scripts\scr_enemy_follow.gml</script>
+    <scripts name="Read/Write">
+      <script>scripts\ReadingFromINI.gml</script>
+      <script>scripts\WritingToINI.gml</script>
+      <script>scripts\Initialize.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Edo_font</font>
@@ -75,6 +80,9 @@
         <object>objects\text_MonName</object>
         <object>objects\text_Sensitivity</object>
         <object>objects\text_Settings</object>
+      </objects>
+      <objects name="Read/Write">
+        <object>objects\Obj_Persistent</object>
       </objects>
     </objects>
   </objects>
